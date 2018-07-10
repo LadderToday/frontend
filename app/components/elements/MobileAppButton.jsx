@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { ANDROID_APP_URL } from '@config';
+import { ANDROID_APP_URL } from 'app/client_config';
 
 class MobileAppButton extends Component {
     onClick = () => {

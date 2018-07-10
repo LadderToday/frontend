@@ -7,7 +7,7 @@ import MobileBanners from 'app/components/elements/MobileBanners/MobileBanners';
 import WelcomeSlider from 'app/components/elements/welcome/WelcomeSlider';
 import WelcomeCardPost from 'app/components/cards/welcome/WelcomeCardPost';
 import LoadingIndicator from 'app/components/elements/LoadingIndicator';
-import { getURL } from 'app/utils/URLConstants'
+import { WIKI_URL } from 'app/client_config';
 
 class Welcome extends Component {
 
@@ -404,7 +404,7 @@ class Welcome extends Component {
                                             <a className="questions-link" href="https://t.me/golos_support"><Icon name="new/telegram" size="2x" />Спросите в телеграме</a>
                                         </div>
                                         <div className="columns">
-                                            <a className="questions-link" href={getURL('WIKI_URL')}><Icon name="new/wikipedia" size="2x" />Посмотрите нашу википедию</a>
+                                            <a className="questions-link" href={WIKI_URL}><Icon name="new/wikipedia" size="2x" />Посмотрите нашу википедию</a>
                                         </div>
                                         <div className="columns">
                                             <a className="questions-link" href="mailto:support@golos.io"><Icon name="new/envelope" size="2x" />Напишите на почту</a>

@@ -2,9 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import tt from 'counterpart'
 import Icon from 'app/components/elements/Icon'
-// import { getURL } from 'app/utils/URLConstants'
 import { api } from 'golos-js'
 import LocalizedCurrency from 'app/components/elements/LocalizedCurrency';
+import { TERMS_OF_SERVICE_URL } from 'app/client_config';
 
 class Footer extends React.Component {
 
@@ -92,7 +92,7 @@ class Footer extends React.Component {
                 [
                     { name: tt('navigation.feedback'), url: '/submit?type=submit_feedback' },
                     { name: tt("navigation.privacy_policy"), url: '/ru--konfidenczialxnostx/@golos/politika-konfidencialnosti' },
-                    { name: tt("navigation.terms_of_service"), url: '/legal/terms_of_service.pdf' }
+                    { name: tt("navigation.terms_of_service"), url: TERMS_OF_SERVICE_URL }
                 ]],
             },
             {
